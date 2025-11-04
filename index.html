@@ -3,444 +3,422 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yasir Iftikar | Cloud & IT Engineer</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <title>Ruhail Hamza Mohamed - Technical Support Specialist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 60px 40px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            border: 6px solid #667eea;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            object-fit: cover;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4em;
+            font-weight: 300;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.5em;
+            color: #764ba2;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        .contact-info a:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            font-size: 2.2em;
+            color: #667eea;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #764ba2;
+            margin-bottom: 15px;
+            margin-top: 25px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            line-height: 1.6;
+            font-size: 1.05em;
+        }
+
+        li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-size: 0.8em;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 15px 50px rgba(102, 126, 234, 0.4);
+        }
+
+        .highlight-box h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .highlight-box h2::after {
+            background: white;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .highlight-box p {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 60px 40px;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-section h2 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .cta-section h2::after {
+            display: none;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 18px 45px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .skills-tag {
+            display: inline-block;
+            background: rgba(102, 126, 234, 0.15);
+            color: #667eea;
+            padding: 8px 16px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.95em;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            font-size: 1em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .subtitle {
+                font-size: 1.2em;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            .section {
+                padding: 25px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">YI</div>
-                <ul class="nav-links">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <div class="container">
+        <header>
+            <!-- Replace 'your-photo.jpg' with your actual photo filename -->
+            <img src="your-photo.jpg" alt="Ruhail Hamza Mohamed" class="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="profile-photo" style="display: none;">RH</div>
+            
+            <h1>Ruhail Hamza Mohamed</h1>
+            <p class="subtitle">Technical Support Specialist I</p>
+            <div class="contact-info">
+                <a href="mailto:hamzaruhail@gmail.com">📧 hamzaruhail@gmail.com</a>
+                <a href="https://linkedin.com/in/ruhail-hamza/" target="_blank">💼 LinkedIn Profile</a>
+            </div>
+        </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Yasir Iftikar</h1>
-                <h2>Cloud & IT Engineer</h2>
-                <p class="tagline">Specializing in AWS & Azure Cloud Technologies</p>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn primary-btn">Contact Me</a>
-                    <a href="#experience" class="btn secondary-btn">View Experience</a>
+        <div class="highlight-box">
+            <h2>About Me</h2>
+            <p>Tech-focused, driven, detail-oriented, innovative professional with hands-on experience in troubleshooting applications, managing incidents through ServiceNow, and monitoring system performance using Splunk. I thrive in collaborative, fast-paced environments that require technical precision and strong communication across teams.</p>
+        </div>
+
+        <div class="section">
+            <h2>Who I Am</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Technical Expertise</h3>
+                    <ul>
+                        <li>Proficient in troubleshooting and resolving complex technical issues on Windows-based systems</li>
+                        <li>Expert with ServiceNow and Splunk for efficient ticket management and issue diagnosis</li>
+                        <li>Skilled in providing remote support and maintaining ISO-compliant documentation</li>
+                    </ul>
                 </div>
-                <div class="certifications-preview">
-                    <div class="cert-badge aws">
-                        <i class="fab fa-aws"></i>
-                        <span>AWS Certified</span>
-                    </div>
-                    <div class="cert-badge azure">
-                        <i class="fab fa-microsoft"></i>
-                        <span>Azure Certified</span>
-                    </div>
-                    <div class="cert-badge isc2">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>ISC2 Certified</span>
-                    </div>
+                <div class="card">
+                    <h3>Support Excellence</h3>
+                    <ul>
+                        <li>Experienced in remote support, software installation, and system health checks</li>
+                        <li>Ensuring high standards of uptime and customer satisfaction in fast-paced environments</li>
+                        <li>Strong focus on user confidence through every interaction</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Project Management</h3>
+                    <ul>
+                        <li>Managed task tracking, milestone reporting, and team accountability</li>
+                        <li>Proficient with Asana, Zoho, and Notion</li>
+                        <li>Cross-functional collaboration with marketing, operations, and partnerships teams</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="hero-bg"></div>
-    </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>IT Engineer specializing in Cloud Technologies with hands-on experience in AWS and Azure, specializing in cloud infrastructure, automation, and deployment pipelines. Certified AWS Solutions Architect and Microsoft Azure professional with a strong background in cloud architecture, system administration, and IT infrastructure management.</p>
-                    <p>Skilled in Infrastructure as Code (IaC) with Terraform and CloudFormation, containerization with Docker and Kubernetes, and CI/CD pipeline automation using GitHub Actions and AWS CodePipeline. Passionate about optimizing cloud environments, automating workflows, and ensuring system reliability through DevOps best practices.</p>
-                </div>
-                <div class="tech-stack">
-                    <h3>Tech Stack</h3>
-                    <div class="tech-icons">
-                        <div class="tech-icon"><i class="fab fa-aws"></i><span>AWS</span></div>
-                        <div class="tech-icon"><i class="fab fa-microsoft"></i><span>Azure</span></div>
-                        <div class="tech-icon"><i class="fab fa-docker"></i><span>Docker</span></div>
-                        <div class="tech-icon"><i class="fas fa-cubes"></i><span>Kubernetes</span></div>
-                        <div class="tech-icon"><i class="fab fa-github"></i><span>GitHub</span></div>
-                        <div class="tech-icon"><i class="fas fa-code-branch"></i><span>Terraform</span></div>
-                        <div class="tech-icon"><i class="fab fa-linux"></i><span>Linux</span></div>
-                        <div class="tech-icon"><i class="fab fa-windows"></i><span>Windows</span></div>
-                    </div>
-                </div>
+        <div class="section">
+            <h2>What I Bring to the Table</h2>
+            <h3>Core Competencies</h3>
+            <div>
+                <span class="skills-tag">ServiceNow</span>
+                <span class="skills-tag">Splunk</span>
+                <span class="skills-tag">Windows Systems</span>
+                <span class="skills-tag">Remote Support</span>
+                <span class="skills-tag">AWS Certified</span>
+                <span class="skills-tag">Cloud Architecture</span>
+                <span class="skills-tag">ISO Compliance</span>
+                <span class="skills-tag">Technical Documentation</span>
+                <span class="skills-tag">Project Coordination</span>
+                <span class="skills-tag">Asana</span>
+                <span class="skills-tag">Zoho</span>
+                <span class="skills-tag">Notion</span>
             </div>
+            <h3>Communication & Collaboration</h3>
+            <ul>
+                <li>Skilled in communicating technical solutions to both technical and non-technical stakeholders</li>
+                <li>Consistently building strong rapport and maintaining user confidence</li>
+                <li>Cross-functional collaboration across diverse teams</li>
+            </ul>
         </div>
-    </section>
 
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Dec 2024 - Present</div>
-                    <div class="timeline-content">
-                        <h3>IT Tech</h3>
-                        <h4>The Big Carrot – Toronto, Canada</h4>
-                        <ul>
-                            <li>Designed and implemented cloud-based solutions on Azure, utilizing Azure Virtual Machines, Storage Accounts, and Virtual Networks to enhance infrastructure scalability.</li>
-                            <li>Managed Azure Active Directory (Entra ID), Intune, and Office 365, streamlining user provisioning, security policies, and compliance.</li>
-                            <li>Automated system deployments and infrastructure management using Terraform and Ansible, improving operational efficiency and reducing manual workloads.</li>
-                            <li>Configured and optimized Azure Monitor, Log Analytics, and Sentinel for proactive monitoring, security, and incident response.</li>
-                            <li>Assisted in the migration of on-premise workloads to Azure, implementing best practices for hybrid cloud solutions.</li>
-                            <li>Developed and maintained PowerShell and Bash scripts for cloud resource management and system automation.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Mar 2022 - Dec 2023</div>
-                    <div class="timeline-content">
-                        <h3>IT Administrator</h3>
-                        <h4>Inbay SL (Pvt) Ltd – Colombo, Sri Lanka</h4>
-                        <ul>
-                            <li>Administered and optimized AWS cloud services, including EC2, S3, IAM, Lambda, and CloudWatch, ensuring high availability and security.</li>
-                            <li>Designed and deployed CI/CD pipelines with GitHub Actions and AWS CodePipeline to automate software deployments.</li>
-                            <li>Implemented Docker and Kubernetes for containerized application deployment, improving scalability and resource utilization.</li>
-                            <li>Managed Azure AD, Intune, and Hybrid AD environments, ensuring seamless authentication and user access control.</li>
-                            <li>Monitored cloud infrastructure with AWS CloudWatch and Azure Monitor, ensuring system performance and uptime.</li>
-                            <li>Provided L2/L3 support for cloud and on-prem IT systems, troubleshooting complex technical issues.</li>
-                            <li>Automated cloud infrastructure provisioning using Terraform and CloudFormation.</li>
-                            <li>Improved DevOps workflows by integrating Jenkins for continuous integration and deployment.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jul 2020 - Aug 2021</div>
-                    <div class="timeline-content">
-                        <h3>IT Engineer/Technician</h3>
-                        <h4>Micronet Global Services – Colombo, Sri Lanka</h4>
-                        <ul>
-                            <li>Provided technical support for hardware, software, and network issues to 100–200 clients, promptly troubleshooting and resolving problems while delivering excellent customer service.</li>
-                            <li>Deployed and managed Windows Server and Linux-based environments for enterprise clients.</li>
-                            <li>Utilized ServiceNow for efficient issue tracking and resolution.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="section">
+            <h2>Example of My Work</h2>
+            <h3>Seneca Hackathon 2025 - Event Organization</h3>
+            <ul>
+                <li>Managed over 100 participants and coordinated more than 20 student teams competing in technical innovation challenges</li>
+                <li>Supported 50+ founders, coordinating schedules, reports, and partner meetings</li>
+                <li>Fostered a collaborative environment by working closely with technical mentors and stakeholders</li>
+                <li>Streamlined communication between organizers and competitors</li>
+            </ul>
+            <h3>Student Success Officer - Seneca College, Toronto</h3>
+            <ul>
+                <li>Hands-on experience in event operations and registrations</li>
+                <li>Demonstrated leadership in managing large-scale technical events</li>
+            </ul>
         </div>
-    </section>
 
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3><i class="fas fa-cloud"></i> Cloud Platforms</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span>AWS (EC2, S3, Lambda, IAM, CloudWatch)</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Azure (VMs, AD, Intune, Monitor)</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-code-branch"></i> Infrastructure as Code</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span>Terraform</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span>CloudFormation</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-cogs"></i> DevOps & Automation</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span>CI/CD (GitHub Actions, AWS CodePipeline, Azure DevOps)</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Ansible</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span>PowerShell, Bash</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fab fa-docker"></i> Containerization & Orchestration</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span>Docker</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Kubernetes</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-shield-alt"></i> Monitoring & Security</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span>AWS Security Hub, GuardDuty</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Azure Sentinel, Log Analytics</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> OS & Servers</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span>Windows Server</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Linux (Ubuntu, CentOS)</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span>macOS</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Scripting & Programming</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span>Python</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span>JavaScript</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Bash, SQL</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> IT Tools</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span>ServiceNow, Jira</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span>GitHub, Jenkins</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="section">
+            <h2>Why Me for Connexall?</h2>
+            <h3>Aligned with Your Mission</h3>
+            <ul>
+                <li>AWS Certified Solutions Architect with advanced technical skills</li>
+                <li>Graduate of Seneca's Cloud Architecture and Administration program (High Honours)</li>
+                <li>One of your targeted programs - clear evidence of dedication to self-directed learning</li>
+            </ul>
+            <h3>Ready to Contribute</h3>
+            <ul>
+                <li>Reside in North York, allowing for immediate availability</li>
+                <li>Strong fit with GlobeStar Systems - Connexall location</li>
+                <li>Ready to start contributing right away</li>
+            </ul>
+            <h3>Proven Quick Learner</h3>
+            <ul>
+                <li>Demonstrated ability to quickly master new systems and technologies</li>
+                <li>Hands-on success in IT troubleshooting and remote support</li>
+                <li>Experience documenting technical solutions in dynamic environments</li>
+            </ul>
         </div>
-    </section>
 
-    <section id="certifications" class="certifications">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="cert-container">
-                <div class="cert-card">
-                    <div class="cert-icon aws">
-                        <i class="fab fa-aws"></i>
-                    </div>
-                    <h3>AWS Certified Solutions Architect Associate</h3>
-                    <p>Issued by AWS</p>
-                    <p class="cert-date">January 2024</p>
-                </div>
-                
-                <div class="cert-card">
-                    <div class="cert-icon azure">
-                        <i class="fab fa-microsoft"></i>
-                    </div>
-                    <h3>AZ-900: Microsoft Azure Fundamentals</h3>
-                    <p>Issued by Microsoft</p>
-                    <p class="cert-date">January 2022</p>
-                </div>
-                
-                <div class="cert-card">
-                    <div class="cert-icon azure">
-                        <i class="fab fa-microsoft"></i>
-                    </div>
-                    <h3>SC-900: Microsoft Security Fundamentals</h3>
-                    <p>Issued by Microsoft</p>
-                    <p class="cert-date">January 2022</p>
-                </div>
-                
-                <div class="cert-card">
-                    <div class="cert-icon azure">
-                        <i class="fab fa-microsoft"></i>
-                    </div>
-                    <h3>AI-900: Microsoft AI Fundamentals</h3>
-                    <p>Issued by Microsoft</p>
-                    <p class="cert-date">January 2022</p>
-                </div>
-                
-                <div class="cert-card">
-                    <div class="cert-icon isc2">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Certified in Cybersecurity</h3>
-                    <p>Issued by ISC2</p>
-                    <p class="cert-date">January 2022</p>
-                </div>
-            </div>
+        <div class="cta-section">
+            <h2>Press Start to Begin</h2>
+            <p style="font-size: 1.3em; margin: 20px 0;">Hire me to unlock my full potential</p>
+            <a href="mailto:hamzaruhail@gmail.com" class="cta-button">📧 Contact Me</a>
         </div>
-    </section>
 
-    <section id="education" class="education">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-container">
-                <div class="education-item">
-                    <div class="education-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="education-content">
-                        <h3>PG Certificate Cloud Architecture and Administration</h3>
-                        <h4>Seneca College, Toronto, Canada</h4>
-                        <p class="education-date">September 2024</p>
-                    </div>
-                </div>
-                
-                <div class="education-item">
-                    <div class="education-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="education-content">
-                        <h3>Bachelor of Engineering Computer Networking</h3>
-                        <h4>London Metropolitan University, London, UK</h4>
-                        <p class="education-date">August 2019</p>
-                    </div>
-                </div>
-                
-                <div class="education-item">
-                    <div class="education-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="education-content">
-                        <h3>BTEC Higher National Diploma Computing & Systems Development</h3>
-                        <h4>ESOFT Metro Campus, Colombo, Sri Lanka</h4>
-                        <p class="education-date">January 2018</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Me</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Phone</h3>
-                            <p>+1-647-216-2261</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Email</h3>
-                            <p>yasirsaheed@outlook.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Location</h3>
-                            <p>Scarborough, Canada M1C 4J2</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn primary-btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">YI</div>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                </div>
-                <p class="copyright">&copy; 2025 Yasir Iftikar. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
+        <footer>
+            <p>&copy; 2025 Ruhail Hamza Mohamed. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
